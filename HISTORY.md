@@ -1,32 +1,33 @@
 # Changelog
 
-## [Unreleased](https://github.com/tj-actions/docker-cp/tree/HEAD)
+## [v2](https://github.com/tj-actions/docker-cp/tree/v2) (2023-01-01)
 
-[Full Changelog](https://github.com/tj-actions/docker-cp/compare/v2.0.0...HEAD)
+[Full Changelog](https://github.com/tj-actions/docker-cp/compare/v2.0.1...v2)
+
+## [v2.0.1](https://github.com/tj-actions/docker-cp/tree/v2.0.1) (2023-01-01)
+
+[Full Changelog](https://github.com/tj-actions/docker-cp/compare/v2.0.0...v2.0.1)
 
 **Merged pull requests:**
 
+- Upgraded to v2 [\#5](https://github.com/tj-actions/docker-cp/pull/5) ([jackton1](https://github.com/jackton1))
 - Updated README.md [\#4](https://github.com/tj-actions/docker-cp/pull/4) ([jackton1](https://github.com/jackton1))
 
 ## [v2.0.0](https://github.com/tj-actions/docker-cp/tree/v2.0.0) (2023-01-01)
 
-[Full Changelog](https://github.com/tj-actions/docker-cp/compare/v2...v2.0.0)
-
-## [v2](https://github.com/tj-actions/docker-cp/tree/v2) (2023-01-01)
-
-[Full Changelog](https://github.com/tj-actions/docker-cp/compare/v1...v2)
+[Full Changelog](https://github.com/tj-actions/docker-cp/compare/v1.0.0...v2.0.0)
 
 **Merged pull requests:**
 
 - Upgraded to v1.0.0 [\#3](https://github.com/tj-actions/docker-cp/pull/3) ([jackton1](https://github.com/jackton1))
 
-## [v1](https://github.com/tj-actions/docker-cp/tree/v1) (2023-01-01)
-
-[Full Changelog](https://github.com/tj-actions/docker-cp/compare/v1.0.0...v1)
-
 ## [v1.0.0](https://github.com/tj-actions/docker-cp/tree/v1.0.0) (2023-01-01)
 
-[Full Changelog](https://github.com/tj-actions/docker-cp/compare/de4dc393bfcc9422ff25711b1ecc082d86a1695b...v1.0.0)
+[Full Changelog](https://github.com/tj-actions/docker-cp/compare/v1...v1.0.0)
+
+## [v1](https://github.com/tj-actions/docker-cp/tree/v1) (2023-01-01)
+
+[Full Changelog](https://github.com/tj-actions/docker-cp/compare/de4dc393bfcc9422ff25711b1ecc082d86a1695b...v1)
 
 **Merged pull requests:**
 
