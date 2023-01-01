@@ -33,10 +33,9 @@ GitHub action to run steps using docker
         uses: tj-actions/docker-run@v2
         with:
           image: user/app:latest
-          options: --name test-app
-          args: |
-            echo "Hello World" >> test.txt
-      
+          options: --name test-app -d
+          args: sleep 10000
+
       - name: Copy from container to host
         uses: tj-actions/docker-cp@v1
         with:
@@ -77,7 +76,8 @@ GitHub action to run steps using docker
         uses: tj-actions/docker-run@v2
         with:
           image: user/app:latest
-          options: --name test-app -d sleep 10000
+          options: --name test-app -d
+          args: sleep 10000
       
       - name: Copy from host to container
         uses: tj-actions/docker-cp@v1
