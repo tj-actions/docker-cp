@@ -39,7 +39,7 @@ jobs:
         with:
           image: user/app:latest
           options: --name test-app -d
-          args: ls && sleep 10000
+          args: bash -c 'ls && sleep 1000'
 
       - name: Copy from container to host
         uses: ./
