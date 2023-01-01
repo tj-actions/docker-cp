@@ -39,7 +39,7 @@ jobs:
         id: docker-run
         with:
           image: user/app:latest
-          options: --name test-app
+          name: test-app
           args: bash -c 'ls && sleep 2'
 
       - name: Copy from container to host
