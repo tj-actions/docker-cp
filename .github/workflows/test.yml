@@ -45,8 +45,8 @@ jobs:
         uses: ./
         with:
           container: test-app
-          source: test.txt
-          destination: test.txt
+          source: entrypoint.sh
+          destination: entrypoint-new.sh
 
       - name: Display contents of test.txt
-        run: cat test.txt
+        run: cat entrypoint-new.sh
