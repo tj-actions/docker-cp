@@ -37,7 +37,7 @@ GitHub action to run steps using docker
           args: sleep 10000
 
       - name: Copy from container to host
-        uses: tj-actions/docker-cp@v1
+        uses: tj-actions/docker-cp@v2
         with:
           container: test-app
           source: test.txt
@@ -80,7 +80,7 @@ GitHub action to run steps using docker
           args: sleep 10000
       
       - name: Copy from host to container
-        uses: tj-actions/docker-cp@v1
+        uses: tj-actions/docker-cp@v2
         with:
           container: test-app
           source: test.txt
