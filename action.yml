@@ -14,7 +14,7 @@ inputs:
   local:
     description: 'Copy from local to container'
     required: false
-    default: 'false'
+    default: 'true'
   options:
     description: 'Additional options'
     required: false
@@ -26,7 +26,7 @@ runs:
     - name: Docker copy
       shell: bash
       run: |
-          if [ "${{ inputs.local }}" = "true" ]; then
+          if [ "${{ inputs.local }}" != "true" ]; then
             docker cp ${{ inputs.options }} ${{ inputs.source }} ${{ inputs.container }}:${{ inputs.destination }}
           else
             docker cp ${{ inputs.options }} ${{ inputs.container }}:${{ inputs.source }} ${{ inputs.destination }}
