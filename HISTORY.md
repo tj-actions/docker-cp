@@ -1,61 +1,16 @@
 # Changelog
 
-## [Unreleased](https://github.com/tj-actions/docker-cp/tree/HEAD)
-
-[Full Changelog](https://github.com/tj-actions/docker-cp/compare/v2.0.0...HEAD)
-
-**Merged pull requests:**
-
-- Updated README.md [\#12](https://github.com/tj-actions/docker-cp/pull/12) ([jackton1](https://github.com/jackton1))
-
-## [v2.0.0](https://github.com/tj-actions/docker-cp/tree/v2.0.0) (2023-01-01)
-
-[Full Changelog](https://github.com/tj-actions/docker-cp/compare/v2...v2.0.0)
-
-## [v2](https://github.com/tj-actions/docker-cp/tree/v2) (2023-01-01)
-
-[Full Changelog](https://github.com/tj-actions/docker-cp/compare/v1...v2)
-
-**Merged pull requests:**
-
-- feat: remove unused inputs [\#11](https://github.com/tj-actions/docker-cp/pull/11) ([jackton1](https://github.com/jackton1))
-- Upgraded to v1.2.0 [\#10](https://github.com/tj-actions/docker-cp/pull/10) ([jackton1](https://github.com/jackton1))
-
 ## [v1](https://github.com/tj-actions/docker-cp/tree/v1) (2023-01-01)
 
-[Full Changelog](https://github.com/tj-actions/docker-cp/compare/v1.2.0...v1)
+[Full Changelog](https://github.com/tj-actions/docker-cp/compare/v1.0.0...v1)
 
-## [v1.2.0](https://github.com/tj-actions/docker-cp/tree/v1.2.0) (2023-01-01)
+## [v1.0.0](https://github.com/tj-actions/docker-cp/tree/v1.0.0) (2023-01-01)
 
-[Full Changelog](https://github.com/tj-actions/docker-cp/compare/v1.1.0...v1.2.0)
-
-**Merged pull requests:**
-
-- Updated README.md [\#9](https://github.com/tj-actions/docker-cp/pull/9) ([jackton1](https://github.com/jackton1))
-- Upgraded to v1.1.0 [\#8](https://github.com/tj-actions/docker-cp/pull/8) ([jackton1](https://github.com/jackton1))
-
-## [v1.1.0](https://github.com/tj-actions/docker-cp/tree/v1.1.0) (2023-01-01)
-
-[Full Changelog](https://github.com/tj-actions/docker-cp/compare/v1.0.0...v1.1.0)
+[Full Changelog](https://github.com/tj-actions/docker-cp/compare/de4dc393bfcc9422ff25711b1ecc082d86a1695b...v1.0.0)
 
 **Merged pull requests:**
 
-- Updated README.md [\#7](https://github.com/tj-actions/docker-cp/pull/7) ([jackton1](https://github.com/jackton1))
-- Updated README.md [\#6](https://github.com/tj-actions/docker-cp/pull/6) ([jackton1](https://github.com/jackton1))
-- Upgraded to v1.0.0 [\#5](https://github.com/tj-actions/docker-cp/pull/5) ([jackton1](https://github.com/jackton1))
-
-## [v1.0.0](https://github.com/tj-actions/docker-cp/tree/v1.0.0) (2022-12-31)
-
-[Full Changelog](https://github.com/tj-actions/docker-cp/compare/53d31446cb69b5c33408326ea3d45854b17f487c...v1.0.0)
-
-**Closed issues:**
-
-- Dependency Dashboard [\#2](https://github.com/tj-actions/docker-cp/issues/2)
-
-**Merged pull requests:**
-
-- Updated README.md [\#4](https://github.com/tj-actions/docker-cp/pull/4) ([jackton1](https://github.com/jackton1))
-- Update tj-actions/auto-doc action to v1.7.2 [\#1](https://github.com/tj-actions/docker-cp/pull/1) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#2](https://github.com/tj-actions/docker-cp/pull/2) ([jackton1](https://github.com/jackton1))
 
 
 
