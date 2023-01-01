@@ -45,7 +45,7 @@ jobs:
         uses: ./
         with:
           container: test-app
-          source: entrypoint.sh
+          source: /entrypoint.sh
           destination: entrypoint-new.sh
 
       - name: Display contents of test.txt
