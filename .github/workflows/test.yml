@@ -36,15 +36,16 @@ jobs:
 
       - name: Run
         uses: tj-actions/docker-run@v2
+        id: docker-run
         with:
           image: user/app:latest
-          options: --name test-app -d
-          args: bash -c 'ls && sleep 10000'
+          options: --name test-app
+          args: bash -c 'ls && sleep 2'
 
       - name: Copy from container to host
         uses: ./
         with:
-          container: test-app
+          container: ${{ steps.docker-run.outputs.container-id }}
           source: /entrypoint.sh
           destination: entrypoint-new.sh
 
