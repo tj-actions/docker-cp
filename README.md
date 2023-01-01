@@ -38,7 +38,7 @@ GitHub action to run steps using docker
             echo "Hello World" >> test.txt
       
       - name: Copy from container to host
-        uses: tj-actions/docker-cp@v2
+        uses: tj-actions/docker-cp@v1
         with:
           container: test-app
           source: test.txt
@@ -80,7 +80,7 @@ GitHub action to run steps using docker
           options: --name test-app -d sleep 10000
       
       - name: Copy from host to container
-        uses: tj-actions/docker-cp@v2
+        uses: tj-actions/docker-cp@v1
         with:
           container: test-app
           source: test.txt
