@@ -51,5 +51,3 @@ jobs:
 
       - name: Display contents of test.txt
         run: cat test.txt
-
-# TODO: Add tests here
