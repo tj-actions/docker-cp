@@ -34,4 +34,22 @@ jobs:
           push: false
           tags: user/app:latest
 
+      - name: Run
+        uses: tj-actions/docker-run@v2
+        with:
+          image: user/app:latest
+          options: --name test-app
+          args: |
+            echo "Hello World" >> test.txt
+
+      - name: Copy from container to host
+        uses: ./
+        with:
+          container: test-app
+          source: test.txt
+          destination: test.txt
+
+      - name: Display contents of test.txt
+        run: cat test.txt
+
 # TODO: Add tests here
