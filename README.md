@@ -8,7 +8,7 @@ GitHub action to run steps using docker
 
 ## Examples
 
-### Using a locally built image
+### Copy from container to host
 
 ```yaml
 ...
@@ -28,28 +28,67 @@ GitHub action to run steps using docker
           load: true
           push: false
           tags: user/app:latest
-      
+
       - name: Run
-        uses: tj-actions/docker-cp@v2
+        uses: tj-actions/docker-run@v2
         with:
           image: user/app:latest
+          options: --name test-app
           args: |
-            echo "Hello World"
+            echo "Hello World" >> test.txt
+      
+      - name: Copy from container to host
+        uses: tj-actions/docker-cp@v2
+        with:
+          container: test-app
+          source: test.txt
+          destination: test.txt
+      
+      - name: Display contents of test.txt
+        run: cat test.txt
+        # Hello World
 ```
 
-### Using an image from a registry
+### Copy from host to container
 
 ```yaml
 ...
     steps:
       - uses: actions/checkout@v2
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2.1.0
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2.2.1
+
+      - name: Build
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          load: true
+          push: false
+          tags: user/app:latest
+
+      - name: Create test.txt
+        run: echo "Hello World" >> test.txt
+
+      - name: Run
+        uses: tj-actions/docker-run@v2
+        with:
+          image: user/app:latest
+          options: --name test-app -d sleep 10000
       
-      - name: Run ubuntu from dockerhub
+      - name: Copy from host to container
         uses: tj-actions/docker-cp@v2
         with:
-          image: ubuntu:latest  # OR gcr.io/cloud-builders/gradle
-          args: |
-            echo "Hello World"
+          container: test-app
+          source: test.txt
+          destination: test.txt
+          local: true
+      
+      - name: Display contents of test.txt
+        run: docker exec test-app cat test.txt
 ```
 
 ## Inputs
