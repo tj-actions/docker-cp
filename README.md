@@ -95,11 +95,13 @@ GitHub action to run steps using docker
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|  INPUT  |  TYPE  | REQUIRED | DEFAULT |          DESCRIPTION          |
-|---------|--------|----------|---------|-------------------------------|
-|  args   | string |   true   |         |        Command to run         |
-|  image  | string |   true   |         |         Docker image          |
-| options | string |  false   |         | Options to pass to docker run |
+|    INPUT    |  TYPE  | REQUIRED |  DEFAULT  |          DESCRIPTION          |
+|-------------|--------|----------|-----------|-------------------------------|
+|  container  | string |   true   |           |        Container name         |
+| destination | string |   true   |           | Destination file or directory |
+|    local    | string |  false   | `"false"` | Copy from local to container  |
+|   options   | string |  false   |           |      Additional options       |
+|   source    | string |   true   |           |   Source file or directory    |
 
 <!-- AUTO-DOC-INPUT:END -->
 
