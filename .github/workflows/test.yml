@@ -39,7 +39,7 @@ jobs:
         with:
           image: user/app:latest
           options: --name test-app -d
-          args: bash -c 'ls && sleep 1000'
+          args: bash -c 'ls && sleep 5000'
 
       - name: Copy from container to host
         uses: ./
@@ -48,5 +48,5 @@ jobs:
           source: /entrypoint.sh
           destination: entrypoint-new.sh
 
-      - name: Display contents of test.txt
+      - name: Display contents of entrypoint-new.sh
         run: cat entrypoint-new.sh
