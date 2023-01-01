@@ -31,15 +31,16 @@ GitHub action to run steps using docker
 
       - name: Run
         uses: tj-actions/docker-run@v2
+        id: docker-run
         with:
           image: user/app:latest
           options: --name test-app -d
-          args: sleep 10000
+          args: sleep 10
 
       - name: Copy from container to host
         uses: tj-actions/docker-cp@v2
         with:
-          container: test-app
+          container: ${{ steps.docker-run.outputs.container-id }}
           source: test.txt
           destination: test.txt
       
@@ -74,21 +75,22 @@ GitHub action to run steps using docker
 
       - name: Run
         uses: tj-actions/docker-run@v2
+        id: docker-run
         with:
           image: user/app:latest
           options: --name test-app -d
-          args: sleep 10000
+          args: sleep 10
       
       - name: Copy from host to container
         uses: tj-actions/docker-cp@v2
         with:
-          container: test-app
+          container: ${{ steps.docker-run.outputs.container-id }}
           source: test.txt
           destination: test.txt
-          local: true
+          local: false
       
       - name: Display contents of test.txt
-        run: docker exec test-app cat test.txt
+        run: docker exec ${{ steps.docker-run.outputs.container-id }} cat test.txt
 ```
 
 ## Inputs
