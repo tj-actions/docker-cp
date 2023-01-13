@@ -16,7 +16,7 @@ inputs:
     required: false
     default: 'true'
   options:
-    description: 'Additional options passed to docker cp'
+    description: 'Additional options passed to [docker cp](https://docs.docker.com/engine/reference/commandline/cp/#options)'
     required: false
     default: ''
 
