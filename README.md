@@ -97,13 +97,13 @@ GitHub action to run steps using docker
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|    INPUT    |  TYPE  | REQUIRED | DEFAULT  |          DESCRIPTION          |
-|-------------|--------|----------|----------|-------------------------------|
-|  container  | string |   true   |          |        Container name         |
-| destination | string |   true   |          | Destination file or directory |
-|    local    | string |  false   | `"true"` | Copy from container to local  |
-|   options   | string |  false   |          |      Additional options       |
-|   source    | string |   true   |          |   Source file or directory    |
+|    INPUT    |  TYPE  | REQUIRED | DEFAULT  |              DESCRIPTION               |
+|-------------|--------|----------|----------|----------------------------------------|
+|  container  | string |   true   |          |             Container name             |
+| destination | string |   true   |          |     Destination file or directory      |
+|    local    | string |  false   | `"true"` |      Copy from container to local      |
+|   options   | string |  false   |          | Additional options passed to docker cp |
+|   source    | string |   true   |          |        Source file or directory        |
 
 <!-- AUTO-DOC-INPUT:END -->
 
