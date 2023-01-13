@@ -16,7 +16,7 @@ inputs:
     required: false
     default: 'true'
   options:
-    description: 'Additional options'
+    description: 'Additional options passed to docker cp'
     required: false
     default: ''
 
@@ -26,10 +26,13 @@ runs:
     - name: Docker copy
       shell: bash
       run: |
+          # Run docker cp
+          EXTRA_ARGS=${{ inputs.options }}
+
           if [ "${{ inputs.local }}" != "true" ]; then
-            docker cp ${{ inputs.options }} ${{ inputs.source }} ${{ inputs.container }}:${{ inputs.destination }}
+            docker cp $EXTRA_ARGS ${{ inputs.source }} ${{ inputs.container }}:${{ inputs.destination }}
           else
-            docker cp ${{ inputs.options }} ${{ inputs.container }}:${{ inputs.source }} ${{ inputs.destination }}
+            docker cp $EXTRA_ARGS ${{ inputs.container }}:${{ inputs.source }} ${{ inputs.destination }}
           fi
 
 branding:
