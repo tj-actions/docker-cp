@@ -12,7 +12,7 @@ inputs:
     description: 'Destination file or directory'
     required: true
   local:
-    description: 'Copy from container to local'
+    description: 'Copy from container to local (i.e container to host)'
     required: false
     default: 'true'
   options:
