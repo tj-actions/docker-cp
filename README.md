@@ -101,7 +101,7 @@ GitHub action to run steps using docker
 |-------------|--------|----------|----------|------------------------------------------------------------------------------------------------------------|
 |  container  | string |   true   |          |                                               Container name                                               |
 | destination | string |   true   |          |                                       Destination file or directory                                        |
-|    local    | string |  false   | `"true"` |                                        Copy from container to local                                        |
+|    local    | string |  false   | `"true"` |                          Copy from container to local (i.e<br>container to host)                           |
 |   options   | string |  false   |          | Additional options passed to [docker cp](https://docs.docker.com/engine/reference/commandline/cp/#options) |
 |   source    | string |   true   |          |                                          Source file or directory                                          |
 
