@@ -97,13 +97,13 @@ GitHub action to run steps using docker
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|    INPUT    |  TYPE  | REQUIRED | DEFAULT  |                                                 DESCRIPTION                                                 |
-|-------------|--------|----------|----------|-------------------------------------------------------------------------------------------------------------|
-|  container  | string |   true   |          |                                               Container name                                                |
-| destination | string |   true   |          |                                        Destination file or directory                                        |
-|    local    | string |  false   | `"true"` |                          Copy from container to local <br>(i.e container to host)                           |
-|   options   | string |  false   |          | Additional options passed to [docker cp](https://docs.docker.com/engine/reference/commandline/cp/#options)  |
-|   source    | string |   true   |          |                                          Source file or directory                                           |
+|                               INPUT                               |  TYPE  | REQUIRED | DEFAULT  |                                                 DESCRIPTION                                                 |
+|-------------------------------------------------------------------|--------|----------|----------|-------------------------------------------------------------------------------------------------------------|
+|    <a name="input_container"></a>[container](#input_container)    | string |   true   |          |                                               Container name                                                |
+| <a name="input_destination"></a>[destination](#input_destination) | string |   true   |          |                                        Destination file or directory                                        |
+|          <a name="input_local"></a>[local](#input_local)          | string |  false   | `"true"` |                          Copy from container to local <br>(i.e container to host)                           |
+|       <a name="input_options"></a>[options](#input_options)       | string |  false   |          | Additional options passed to [docker cp](https://docs.docker.com/engine/reference/commandline/cp/#options)  |
+|        <a name="input_source"></a>[source](#input_source)         | string |   true   |          |                                          Source file or directory                                           |
 
 <!-- AUTO-DOC-INPUT:END -->
 
